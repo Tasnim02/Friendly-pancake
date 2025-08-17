@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h1>Hello, I’m <span class="highlight">Najia</span></h1>
+    <p class="typed-text"></p>
+  </section>
+
+  <section id="skills">...</section>
+  <section id="projects">...</section>
+  <section id="contact">...</section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+
+  body {
+  cursor: none;
+}
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #64ffda;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+var typed = new Typed(".typed-text", {
+  strings: ["Business Analyst", "Data Enthusiast", "Problem Solver"],
+  typeSpeed: 60,
+  backSpeed: 40,
+  loop: true
+});
+
+gsap.from("#projects", {
+  scrollTrigger: "#projects",
+  y: 100,
+  opacity: 0,
+  duration: 1
+});
+
