@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friendly Pancake</title>
+  <title>Friendly Pancake Portfolio</title>
   <link rel="stylesheet" href="style.css">
-</head>
-
+  <!-- Typed.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-<script src="scripts.js"></script>
-
+  <!-- GSAP CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+</head>
 <body>
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+
+  <!-- Navigation -->
   <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </nav>
 
+  <!-- Hero / About -->
   <section id="about">
-    <h1>Hello, I’m <span class="highlight">Najia</span></h1>
-    <p class="typed-text"></p>
+    <h1>Hello, I’m Najia</h1>
+    <h2>I am a <span class="typed-text"></span></h2>
+    <p>Welcome to my portfolio! I love turning data into actionable insights.</p>
   </section>
 
-  <section id="skills">...</section>
-  <section id="projects">...</section>
-  <section id="contact">...</section>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>SQL / BigQuery</li>
+      <li>Python / R</li>
+      <li>Tableau / Power BI</li>
+      <li>Business Analysis & Reporting</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">Project 1: Dashboard Analysis</div>
+    <div class="project-card">Project 2: Sales Forecasting</div>
+    <div class="project-card">Project 3: Customer Insights</div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your-email@example.com</p>
+  </section>
 
   <script src="scripts.js"></script>
 </body>
 </html>
-
-
-
