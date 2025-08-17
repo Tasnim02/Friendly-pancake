@@ -1,0 +1,26 @@
+  body {
+  cursor: none;
+}
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #64ffda;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+var typed = new Typed(".typed-text", {
+  strings: ["Business Analyst", "Data Enthusiast", "Problem Solver"],
+  typeSpeed: 60,
+  backSpeed: 40,
+  loop: true
+});
+
+gsap.from("#projects", {
+  scrollTrigger: "#projects",
+  y: 100,
+  opacity: 0,
+  duration: 1
+});
