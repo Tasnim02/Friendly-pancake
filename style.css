@@ -1,6 +1,20 @@
-  body {
-  cursor: none;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Body & cursor */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d1117;
+  color: #e6f1ff;
+  line-height: 1.6;
+  cursor: none;
+  padding: 20px;
+}
+
 .cursor {
   width: 20px;
   height: 20px;
@@ -9,6 +23,56 @@
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  transition: transform 0.1s;
 }
 
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background: #161b22;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+}
 
+nav a {
+  color: #64ffda;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1, h2 {
+  color: #64ffda;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Project cards */
+.project-card {
+  background: #161b22;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
